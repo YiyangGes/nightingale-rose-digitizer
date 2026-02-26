@@ -132,18 +132,23 @@ cd nightingale-rose-digitizer
 
 2. Install dependencies
 
-`pip install -r requirements.txt`
+```
+pip install -r requirements.txt
+```
 
 3. Run the digitizer in terminal to collect the data throught interactive measurement
 
 For the diagram on left:
 
-`python app.py --image assets/your_combined_image.jpg --diagram left`
+```
+python app.py --image assets/your_combined_image.jpg --diagram left
+```
 
 For the diagram on the right
 
-`python app.py --image assets/your_combined_image.jpg --diagram right`
-
+```
+python app.py --image assets/your_combined_image.jpg --diagram right
+```
 
 ## What I have learned
 Throughout this project, I learned the importance of planning carefully before implementation in order to work efficiently and avoid unnecessary rework. Structuring the workflow—from digitization to data processing to visualization—significantly improved both clarity and productivity.
