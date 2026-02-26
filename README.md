@@ -136,7 +136,7 @@ cd nightingale-rose-digitizer
 pip install -r requirements.txt
 ```
 
-3. Run the digitizer in terminal to collect the data through interactive measurement
+3. Run the digitizer in terminal to collect the data through interactive measurement (optional since there is data ready)
 
     For the diagram on left:
 
@@ -149,6 +149,11 @@ pip install -r requirements.txt
     ```
     python app.py --image assets/your_combined_image.jpg --diagram right
     ```
+4. Plot with data collected
+
+```
+python plot-rose.py
+```
 
 ## What I have learned
 Throughout this project, I learned the importance of planning carefully before implementation in order to work efficiently and avoid unnecessary rework. Structuring the workflow—from digitization to data processing to visualization—significantly improved both clarity and productivity.
