@@ -19,7 +19,6 @@ This project:
 - Digitizes the original historical diagram
 - Reconstructs proportional wedge areas
 - Recreates the polar chart using Python
-- Compares alternative visualization approaches
 
 
 ## The Original Diagram
@@ -80,8 +79,8 @@ This works because wedge area ∝ r^2, so values add in area space, and you conv
 
 ## Key Insights
 
-* The left diagram (April 1854–March 1855) shows that deaths from preventable diseases overwhelmingly exceeded deaths from wounds or other causes, especially during the winter months.
-* The right diagram (April 1855–March 1856) shows a dramatic reduction in deaths from preventable diseases following sanitary reforms, while deaths from wounds remain comparatively smaller.
+* The right diagram (April 1854–March 1855) shows that deaths from preventable diseases overwhelmingly exceeded deaths from wounds or other causes, especially during the winter months.
+* The left diagram (April 1855–March 1856) shows a dramatic reduction in deaths from preventable diseases following sanitary reforms, while deaths from wounds remain comparatively smaller.
 * This visualization demonstrates how clear statistical evidence can support data-driven policy change, showing that improved sanitation significantly reduced mortality.
 * The contrast of before and after make it convincing that sanitation is indeed a significant factor in mortality counts. There might be limitation for polar chart too. Firstly, it would be hard to show to overall trend of the data. Secondly, for 2 similar counts, it would be hard to tell the difference because human is not sensitive to area. The limitations would be compensate by some alternative visualization ways.
 
@@ -112,13 +111,13 @@ nightingale-rose/
 - `matplotlib` - Interactive plotting and UI components
 - `PIL` (Pillow) - Image loading and manipulation
 - `tkinter` - Dialog boxes (messagebox)
-- **Standard** library: json, math, os, dataclasses, typing, argparse
+- **Standard library**: json, math, os, dataclasses, typing, argparse
 
 plot-rose.py (Visualization):
 - `numpy` - Numerical computations
 - `pandas` - Data manipulation and CSV handling
 - `matplotlib` - Rose diagram visualization
-- **Standard** library: os, calendar
+- **Standard library**: os, calendar
 
 
 ## How to Run
@@ -126,8 +125,10 @@ plot-rose.py (Visualization):
 
 1. Clone the repository
 
-`git clone git@github.com:YiyangGes/nightingale-rose-digitizer.git`
-`cd nightingale-rose-digitizer`
+```
+git clone git@github.com:YiyangGes/nightingale-rose-digitizer.git`
+cd nightingale-rose-digitizer
+```
 
 2. Install dependencies
 
