@@ -33,9 +33,9 @@ This project:
 
 Because the original dataset does not provide raw mortality counts in modern format, we reconstruct relative values by measuring wedge areas directly from the diagram.
 
-### Step 1 — Interactive Digitization
+### Step 1 — How Data is collected
 
-> How data was collected
+![alt text](assets/image.png)
 
 A custom Matplotlib-based digitizer was built to:
 
