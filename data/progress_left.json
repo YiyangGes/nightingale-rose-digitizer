@@ -1,0 +1,323 @@
+{
+  "image_path": "3815a Large.jpg",
+  "diagram_key": "left",
+  "center_xy": [
+    274.80613440976714,
+    315.30855918376585
+  ],
+  "months": [
+    "1855-04",
+    "1855-05",
+    "1855-06",
+    "1855-07",
+    "1855-08",
+    "1855-09",
+    "1855-10",
+    "1855-11",
+    "1855-12",
+    "1856-01",
+    "1856-02",
+    "1856-03"
+  ],
+  "categories": [
+    "preventable_disease",
+    "wounds",
+    "other_causes"
+  ],
+  "data": {
+    "1855-04": {
+      "preventable_disease": {
+        "radius_px": 221.62279280315414,
+        "click_xy": [
+          63.838579576510455,
+          247.41634241669726
+        ],
+        "is_missing": false
+      },
+      "wounds": {
+        "radius_px": 0.0,
+        "click_xy": null,
+        "is_missing": true
+      },
+      "other_causes": {
+        "radius_px": 69.27083744892556,
+        "click_xy": [
+          209.13992537462877,
+          293.25412852167483
+        ],
+        "is_missing": false
+      }
+    },
+    "1855-05": {
+      "preventable_disease": {
+        "radius_px": 216.9719984865494,
+        "click_xy": [
+          126.58740768071289,
+          156.8533378306494
+        ],
+        "is_missing": false
+      },
+      "wounds": {
+        "radius_px": 69.95228065983696,
+        "click_xy": [
+          227.38603440670727,
+          263.8823432505242
+        ],
+        "is_missing": false
+      },
+      "other_causes": {
+        "radius_px": 54.67114024406771,
+        "click_xy": [
+          237.6216565466537,
+          275.2305330143779
+        ],
+        "is_missing": false
+      }
+    },
+    "1855-06": {
+      "preventable_disease": {
+        "radius_px": 255.92732770515633,
+        "click_xy": [
+          223.8258180102041,
+          64.51022504634994
+        ],
+        "is_missing": false
+      },
+      "wounds": {
+        "radius_px": 132.5654527019566,
+        "click_xy": [
+          247.63476516181868,
+          185.55758252745574
+        ],
+        "is_missing": false
+      },
+      "other_causes": {
+        "radius_px": 52.83864659153015,
+        "click_xy": [
+          263.6557389460827,
+          263.6598297257427
+        ],
+        "is_missing": false
+      }
+    },
+    "1855-07": {
+      "preventable_disease": {
+        "radius_px": 171.9585737115975,
+        "click_xy": [
+          322.6832674122678,
+          150.14945041774055
+        ],
+        "is_missing": false
+      },
+      "wounds": {
+        "radius_px": 97.78156728718201,
+        "click_xy": [
+          302.7248145238816,
+          221.59739548475156
+        ],
+        "is_missing": false
+      },
+      "other_causes": {
+        "radius_px": 54.16681225926645,
+        "click_xy": [
+          290.1459509557459,
+          263.35922253096214
+        ],
+        "is_missing": false
+      }
+    },
+    "1855-08": {
+      "preventable_disease": {
+        "radius_px": 186.26869028774937,
+        "click_xy": [
+          409.56129576258115,
+          186.71201385578843
+        ],
+        "is_missing": false
+      },
+      "wounds": {
+        "radius_px": 103.44651536815472,
+        "click_xy": [
+          348.84731427371264,
+          243.06532264103652
+        ],
+        "is_missing": false
+      },
+      "other_causes": {
+        "radius_px": 43.67426462872793,
+        "click_xy": [
+          306.2468963229596,
+          284.99486786815567
+        ],
+        "is_missing": false
+      }
+    },
+    "1855-09": {
+      "preventable_disease": {
+        "radius_px": 111.3588780762355,
+        "click_xy": [
+          382.89410499813346,
+          288.51694966723363
+        ],
+        "is_missing": false
+      },
+      "wounds": {
+        "radius_px": 139.95504376709542,
+        "click_xy": [
+          410.56760484803203,
+          281.30506788816916
+        ],
+        "is_missing": false
+      },
+      "other_causes": {
+        "radius_px": 37.447531788521,
+        "click_xy": [
+          311.1107235693055,
+          306.1273586626237
+        ],
+        "is_missing": false
+      }
+    },
+    "1855-10": {
+      "preventable_disease": {
+        "radius_px": 98.81280379730073,
+        "click_xy": [
+          369.2587123594369,
+          344.3375225298002
+        ],
+        "is_missing": false
+      },
+      "wounds": {
+        "radius_px": 51.57507465166305,
+        "click_xy": [
+          324.19903431947006,
+          330.15206833203285
+        ],
+        "is_missing": false
+      },
+      "other_causes": {
+        "radius_px": 38.50738635994132,
+        "click_xy": [
+          311.682457086146,
+          326.3970951620356
+        ],
+        "is_missing": false
+      }
+    },
+    "1855-11": {
+      "preventable_disease": {
+        "radius_px": 127.89492207211259,
+        "click_xy": [
+          363.83486222499647,
+          407.12901831697627
+        ],
+        "is_missing": false
+      },
+      "wounds": {
+        "radius_px": 37.75315391133384,
+        "click_xy": [
+          301.2519760583759,
+          342.25142632424615
+        ],
+        "is_missing": false
+      },
+      "other_causes": {
+        "radius_px": 52.65231927818564,
+        "click_xy": [
+          311.682457086146,
+          352.89051697257173
+        ],
+        "is_missing": false
+      }
+    },
+    "1855-12": {
+      "preventable_disease": {
+        "radius_px": 87.30041273978311,
+        "click_xy": [
+          298.9572702322664,
+          399.20185273587094
+        ],
+        "is_missing": false
+      },
+      "wounds": {
+        "radius_px": 13.606254713082372,
+        "click_xy": [
+          278.93074665894784,
+          328.27458174703423
+        ],
+        "is_missing": false
+      },
+      "other_causes": {
+        "radius_px": 48.991306077470675,
+        "click_xy": [
+          288.73539882505173,
+          362.2779498975648
+        ],
+        "is_missing": false
+      }
+    },
+    "1856-01": {
+      "preventable_disease": {
+        "radius_px": 0.0,
+        "click_xy": null,
+        "is_missing": true
+      },
+      "wounds": {
+        "radius_px": 0.0,
+        "click_xy": null,
+        "is_missing": true
+      },
+      "other_causes": {
+        "radius_px": 53.424398760467994,
+        "click_xy": [
+          262.4505866350711,
+          367.28458079089444
+        ],
+        "is_missing": false
+      }
+    },
+    "1856-02": {
+      "preventable_disease": {
+        "radius_px": 0.0,
+        "click_xy": null,
+        "is_missing": true
+      },
+      "wounds": {
+        "radius_px": 0.0,
+        "click_xy": null,
+        "is_missing": true
+      },
+      "other_causes": {
+        "radius_px": 37.23327439944342,
+        "click_xy": [
+          248.89096129896996,
+          342.0428167036908
+        ],
+        "is_missing": false
+      }
+    },
+    "1856-03": {
+      "preventable_disease": {
+        "radius_px": 32.70236343252718,
+        "click_xy": [
+          243.67295223962293,
+          325.3170326954311
+        ],
+        "is_missing": false
+      },
+      "wounds": {
+        "radius_px": 0.0,
+        "click_xy": null,
+        "is_missing": true
+      },
+      "other_causes": {
+        "radius_px": 48.580190365316916,
+        "click_xy": [
+          228.57801987057366,
+          330.241620560511
+        ],
+        "is_missing": false
+      }
+    }
+  }
+}

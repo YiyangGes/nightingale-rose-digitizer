@@ -78,12 +78,6 @@ Therefore:
 - Relative area = radius²
 - To reconstruct radii from area values:
 
-```python
-radii_other = np.sqrt(df['other'])
-radii_wound = np.sqrt(df['wound'])
-radii_disease = np.sqrt(df['disease'])
-```
-
 ## Technical Details
 
 ---
@@ -127,15 +121,24 @@ plot-rose.py (Visualization):
 ---
 
 1. Clone the repository
+
 `git clone git@github.com:YiyangGes/nightingale-rose-digitizer.git`
 `cd nightingale-rose-digitizer`
+
 2. Install dependencies
+
 `pip install -r requirements.txt`
+
 3. Run the digitizer in terminal to collect the data throught interactive measurement
+
 For the diagram on left:
+
 `python app.py --image assets/your_combined_image.jpg --diagram left`
+
 For the diagram on the right
+
 `python app.py --image assets/your_combined_image.jpg --diagram right`
+
 
 ## What I have learned
 Throughout this project, I learned the importance of planning carefully before implementation in order to work efficiently and avoid unnecessary rework. Structuring the workflow—from digitization to data processing to visualization—significantly improved both clarity and productivity.
