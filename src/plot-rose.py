@@ -65,7 +65,7 @@ def pivot_area(df, months):
     return table[STACK_ORDER]
 
 
-def draw_rose(ax, area_table, months, title):
+def draw_rose(ax, area_table, months, title, global_max):
     n = len(months)
     months = list(reversed(months))
     area_table = area_table.reindex(months)
@@ -75,12 +75,10 @@ def draw_rose(ax, area_table, months, title):
     # Stack in AREA space then convert to radii
     cum_area = area_table.cumsum(axis=1)
 
-    # Normalize each diagram to its own max so it “fills” similarly like the plate
-    max_cum_area = float(cum_area.max().max()) if cum_area.size else 1.0
-    if max_cum_area <= 0:
-        max_cum_area = 1.0
+    if global_max <= 0:
+        global_max = 1.0
 
-    r_cum = np.sqrt(cum_area / max_cum_area)
+    r_cum = np.sqrt(cum_area / global_max)
 
     # Match original orientation style
     ax.set_theta_direction(1)      # counterclockwise
@@ -108,6 +106,8 @@ def draw_rose(ax, area_table, months, title):
     ax.set_xticks(theta + width/2)
     ax.set_xticklabels(month_labels_from_strings(months), fontsize=9)
 
+    # Set consistent radial limits for both plots (normalized to 0-1 scale)
+    ax.set_ylim(0, 1.0)
     ax.set_yticklabels([])
     ax.grid(True, linewidth=0.5, alpha=0.35)
     ax.set_title(title, pad=14, fontsize=11, weight="bold")
@@ -127,6 +127,14 @@ def main():
     dfR, monthsR = load_and_prepare(csv_right)
     areaL = pivot_area(dfL, monthsL)
     areaR = pivot_area(dfR, monthsR)
+
+    cumL = areaL.cumsum(axis=1)
+    cumR = areaR.cumsum(axis=1)
+
+    global_max = max(
+        float(cumL.max().max()),
+        float(cumR.max().max())
+    )
 
     # --- Plate layout like the original image (NO OVERLAP) ---
     fig = plt.figure(figsize=(14, 8), constrained_layout=True)
@@ -153,8 +161,8 @@ def main():
     ax_left  = fig.add_subplot(gs[1, 0], projection="polar")
     ax_right = fig.add_subplot(gs[1, 1], projection="polar")
 
-    draw_rose(ax_left,  areaL, monthsL, "APRIL 1855 to MARCH 1856.")
-    draw_rose(ax_right, areaR, monthsR, "APRIL 1854 to MARCH 1855.")
+    draw_rose(ax_left,  areaL, monthsL,  "APRIL 1855 to MARCH 1856.", global_max)
+    draw_rose(ax_right, areaR, monthsR,  "APRIL 1854 to MARCH 1855.", global_max)
 
     # Legend column (separate axis so it never overlaps the polar plots)
     ax_leg = fig.add_subplot(gs[1, 2])
