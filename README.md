@@ -140,16 +140,15 @@ pip install -r requirements.txt
 
     For the diagram on left:
 
-```
-python app.py --image assets/your_combined_image.jpg --diagram left
-```
+    ```
+    python app.py --image assets/your_combined_image.jpg --diagram left
+    ```
 
     For the diagram on the right
 
-```
-python app.py --image assets/your_combined_image.jpg --diagram right
-```
-
+    ```
+    python app.py --image assets/your_combined_image.jpg --diagram right
+    ```
 4. Plot with data collected
 
 ```
