@@ -115,8 +115,8 @@ def draw_rose(ax, area_table, months, title):
 
 def main():
     # Prefilled paths
-    csv_left = "../data/output_data_left.csv"    # Apr 1855 – Mar 1856
-    csv_right = "../data/output_data_right.csv"  # Apr 1854 – Mar 1855
+    csv_left = "output_data_left.csv"    # Apr 1855 – Mar 1856
+    csv_right = "output_data_right.csv"  # Apr 1854 – Mar 1855
 
     for p in (csv_left, csv_right):
         if not os.path.exists(p):
@@ -181,7 +181,7 @@ def main():
     )
 
     # Save PNG (no overlap guaranteed)
-    out = "../output/nightingale_plate.png"
+    out = "nightingale_plate.png"
     plt.savefig(out, dpi=300, bbox_inches="tight")
     print(f"Saved: {out}")
     plt.show()
@@ -221,7 +221,7 @@ def main():
                frameon=False, fontsize=11)
 
     # Save PNG
-    out = "../output/nightingale_plate.png"
+    out = "nightingale_plate.png"
     plt.savefig(out, dpi=300, bbox_inches="tight")
     print(f"Saved: {out}")
 

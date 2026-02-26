@@ -9,7 +9,6 @@ Florence Nightingale’s Rose Diagram — Data Reconstruction & Replication
 
 ## Project Overview & Story
 
----
 
 This project reconstructs Florence Nightingale’s famous *coxcomb* (polar area) diagrams using modern data digitization and visualization techniques.
 
@@ -25,29 +24,19 @@ This project:
 
 ## The Original Diagram
 
----
 
 <p align="center">
-  <img src="assets/3815a Large.jpg" height="450">
-</p>
-
-
-## Digitize Diagram
-
----
-
-<p align="center">
-  <img src="output/nightingale_plate.png" height="450">
+  <img src="assets/nightingale_original.jpg" height="450">
 </p>
 
 
 ## Data Digitization Workflow
 
----
-
 Because the original dataset does not provide raw mortality counts in modern format, we reconstruct relative values by measuring wedge areas directly from the diagram.
 
 ### Step 1 — Interactive Digitization
+
+> How data was collected
 
 A custom Matplotlib-based digitizer was built to:
 
@@ -62,26 +51,42 @@ A custom Matplotlib-based digitizer was built to:
 
 This allows precise and reproducible data extraction.
 
----
 
 ### Step 2 — Area Calculation
 
-In a polar area chart:
+In Nightingale’s rose diagram, each month has the same angle, so the wedge area depends only on the radius. The area of a circular sector is proportional to r^2, so when you click the outer edge and compute:
 
-\[
-\text{Area} \propto r^2
-\]
+```python
+area_rel = radius_px ** 2
+```
 
-Therefore:
+you are correctly capturing the value represented by that wedge.
 
-- Measured radius = distance from center to wedge boundary
-- Relative area = radius²
-- To reconstruct radii from area values:
+When stacking categories, you must add areas, not radii:
+
+```python
+cum_area = area_table.cumsum(axis=1)
+r_cum = np.sqrt(cum_area)
+```
+
+This works because wedge area ∝ r^2, so values add in area space, and you convert back to radius using the square root for plotting.
+
+
+## Digitize Diagram
+
+<p align="center">
+  <img src="output/nightingale_plate.png" height="450">
+</p>
+
+## Key Insights
+
+* The left diagram (April 1854–March 1855) shows that deaths from preventable diseases overwhelmingly exceeded deaths from wounds or other causes, especially during the winter months.
+* The right diagram (April 1855–March 1856) shows a dramatic reduction in deaths from preventable diseases following sanitary reforms, while deaths from wounds remain comparatively smaller.
+* This visualization demonstrates how clear statistical evidence can support data-driven policy change, showing that improved sanitation significantly reduced mortality.
+* The contrast of before and after make it convincing that sanitation is indeed a significant factor in mortality counts. There might be limitation for polar chart too. Firstly, it would be hard to show to overall trend of the data. Secondly, for 2 similar counts, it would be hard to tell the difference because human is not sensitive to area. The limitations would be compensate by some alternative visualization ways.
 
 ## Technical Details
 
----
-s
 ### File Structure
 
 ```
@@ -118,7 +123,6 @@ plot-rose.py (Visualization):
 
 ## How to Run
 
----
 
 1. Clone the repository
 
